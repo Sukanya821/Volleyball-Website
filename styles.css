@@ -1,0 +1,216 @@
+/* Global Styling */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f0f4f8; /* Light background */
+    color: #00274d; /* Sapphire Blue Text */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00274d; /* Dark Sapphire Blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00adee; /* Light Sapphire Blue */
+}
+
+/* Section Styling */
+.section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #00274d;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #00274d;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #00274d;
+    color: white;
+}
+
+td {
+    background-color: #f8faff;
+}
+
+/* Team Images */
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.team-member h3 {
+    color: #00274d;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Animation */
+.fade-in {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Video Section */
+.video-section {
+    background-color: #00274d; /* Dark Blue for contrast */
+    color: white;
+    padding: 40px 20px;
+}
+
+.video-section h2 {
+    color: #00adee; /* Light Sapphire Blue */
+    margin-bottom: 30px;
+}
+
+.video-section iframe {
+    width: 560px;
+    height: 315px;
+    margin: 20px auto;
+    display: block;
+    border: 5px solid #00adee; /* Light Blue border around videos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    font-size: 1.1rem;
+    color: #00274d;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border: 2px solid #00274d;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    background-color: #00274d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #00adee;
+}
+
+/* Footer */
+footer {
+    background-color: #00274d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, .section, .video-section {
+        padding: 20px 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+
+    table, th, td {
+        font-size: 0.9rem;
+    }
+
+    .video-section iframe {
+        width: 100%;
+        height: auto;
+    }
+}
